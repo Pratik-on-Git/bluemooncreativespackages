@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Moon Creatives | Client Brochure</title>
+  <meta
+    name="description"
+    content="Detailed client brochure for Blue Moon Creatives with full service catalog, package scope, pricing estimate, commercial notes, and contact details."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --paper: #e8e8e8;
+  --ink: #0b0b0b;
+  --charcoal: #101012;
+  --line-dark: rgba(4, 0, 255, 0.2);
+  --line-light: rgba(180, 90, 90, 0.22);
+  --text-light: #f3f3f3;
+  --text-dark: #121212;
+  --muted-light: rgba(255, 255, 255, 0.72);
+  --muted-dark: rgba(0, 0, 0, 0.66);
+  --sheet-width: 1120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255, 255, 255, 0.22), transparent 33%),
+    radial-gradient(circle at 86% 88%, rgba(0, 0, 0, 0.2), transparent 30%),
+    #8f8f8f;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+.brochure {
+  width: 100%;
+  display: grid;
+  gap: 18px;
+}
+
+.sheet {
+  position: relative;
+  aspect-ratio: 1 / 1.414;
+  min-height: 700px;
+  padding: clamp(24px, 3.2vw, 38px);
+  border: 1px solid rgba(0, 0, 0, 0.42);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sheet-in 520ms cubic-bezier(0.2, 0.84, 0.24, 1) forwards;
+}
+
+.sheet:nth-child(2) { animation-delay: 70ms; }
+.sheet:nth-child(3) { animation-delay: 120ms; }
+.sheet:nth-child(4) { animation-delay: 170ms; }
+.sheet:nth-child(5) { animation-delay: 220ms; }
+.sheet:nth-child(6) { animation-delay: 270ms; }
+.sheet:nth-child(7) { animation-delay: 320ms; }
+
+.sheet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(to right, transparent 0, transparent 7.8%, currentColor 7.8%, currentColor 8%),
+    repeating-linear-gradient(to bottom, transparent 0, transparent 11.8%, currentColor 11.8%, currentColor 12%);
+  opacity: 0.18;
+}
+
+.sheet.dark {
+  background: var(--charcoal);
+  color: var(--text-light);
+}
+
+.sheet.dark::before {
+  color: var(--line-dark);
+}
+
+.sheet.light {
+  background: var(--paper);
+  color: var(--text-dark);
+}
+
+.sheet.light::before {
+  color: var(--line-light);
+}
+
+.sheet > * {
+  position: relative;
+  z-index: 1;
+}
+
+.sheet-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.73rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.brand-blue {
+  color: #3b7dff;
+}
+
+.cover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.kicker {
+  margin: 0 0 12px;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted-light);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6.8vw, 6.2rem);
+  line-height: 0.93;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  line-height: 0.98;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.lead {
+  margin: 18px 0 0;
+  max-width: 100%;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.dark .lead {
+  color: var(--muted-light);
+}
+
+.key-box {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 18px;
+  align-self: end;
+}
+
+.key-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+li,
+p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.key-box li + li {
+  margin-top: 8px;
+}
+
+.sheet-foot {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.light .sheet-foot {
+  border-top-color: rgba(0, 0, 0, 0.23);
+}
+
+.sheet-no {
+  position: absolute;
+  right: clamp(18px, 2.8vw, 34px);
+  bottom: clamp(18px, 2.8vw, 34px);
+  font-size: clamp(2rem, 6vw, 5.3rem);
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.2;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.toc-list {
+  margin-top: 16px;
+  padding-left: 1.15rem;
+}
+
+.toc-list li + li {
+  margin-top: 8px;
+}
+
+.sheet-title {
+  margin: 2px 0 18px;
+}
+
+.tabs-shell {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.cover-tabs {
+  margin-top: 14px;
+}
+
+.tab-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.tab-btn {
+  border: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px 12px;
+  background: transparent;
+  color: var(--muted-light);
+  font-family: inherit;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.tab-btn:last-child {
+  border-right: none;
+}
+
+.tab-btn:hover {
+  color: var(--text-light);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tab-btn.is-active {
+  color: var(--text-light);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tab-panels {
+  padding: 18px;
+}
+
+.tab-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
+.tab-detail-table {
+  font-size: 0.9rem;
+}
+
+.tab-detail-table th,
+.tab-detail-table td {
+  padding: 10px 8px;
+}
+
+.tab-detail-table th:nth-child(3),
+.tab-detail-table td:nth-child(3) {
+  display: none;
+}
+
+.tab-note {
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-light);
+}
+
+.feature-points {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+}
+
+.feature-points li {
+  margin: 0;
+}
+
+.feature-points li strong {
+  font-weight: 700;
+}
+
+.feature-points .not-included {
+  grid-column: 1 / -1;
+}
+
+.compact-points {
+  font-size: 0.88rem;
+}
+
+.detail-lines {
+  display: grid;
+}
+
+.detail-lines p {
+  position: relative;
+  margin: 0;
+  padding: 12px 0px 0px 34px;
+  overflow-wrap: anywhere;
+}
+
+.detail-lines p::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 19px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(141, 201, 255, 0.95);
+}
+
+.detail-lines p.not-included::before {
+  background: rgba(255, 124, 116, 0.95);
+}
+
+.service-summary-row td {
+  vertical-align: middle;
+  border-top: none;
+  padding: 16px 12px;
+  overflow-wrap: anywhere;
+}
+
+.service-summary-row td:first-child {
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+
+.service-summary-row td:last-child {
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+.service-summary-row td:first-child br {
+  display: none;
+}
+
+.service-summary-row td:first-child .sub {
+  display: inline;
+  margin-left: 10px;
+}
+
+.service-summary-row.is-active {
+  background: transparent;
+}
+
+
+
+.action-cell {
+  text-align: right;
+  white-space: nowrap;
+  width: 140px;
+}
+
+.detail-toggle-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(128px, 100%);
+  height: 38px;
+  min-height: 38px;
+  border: none;
+  background: blue;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0 9px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, background 0.2s ease;
+}
+
+.detail-toggle-button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  box-shadow: 0 11px 22px rgba(14, 32, 89, 0.46);
+}
+
+.detail-toggle-button.is-open {
+  background: #b42323;
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(180, 35, 35, 0.34);
+}
+
+.detail-expand-row td {
+  border-top: none;
+  padding: 0 10px 14px;
+}
+
+.detail-expand-panel {
+  display: grid;
+  gap: 12px;
+  border: none;
+  background: transparent;
+}
+
+.detail-expand-row:not([hidden]) .detail-expand-panel {
+  animation: detail-reveal 220ms ease;
+}
+
+.detail-price {
+  margin: 0;
+  padding: 13px 14px;
+  border: 2px solid rgba(0, 17, 255, 0.35);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+  overflow-wrap: anywhere;
+}
+
+.light .detail-toggle-button.is-open {
+  background: #b42323;
+  color: #ffffff;
+}
+
+.light .detail-expand-panel {
+  border-color: transparent;
+  background: transparent;
+}
+
+.light .detail-price {
+  border-top-color: transparent;
+}
+
+.light .service-summary-row.is-active {
+  background: rgba(59, 125, 255, 0.08);
+}
+
+.tab-detail-table thead {
+  display: none;
+}
+
+.service-accordion-table thead {
+  display: none;
+}
+
+.not-included {
+  color: rgba(255, 146, 146, 0.92);
+}
+
+.tab-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-light);
+}
+
+.tab-panel ul {
+  padding-left: 1.05rem;
+}
+
+.tab-panel li + li {
+  margin-top: 8px;
+}
+
+.jump-link {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  color: var(--text-light);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+}
+
+.rate-table th,
+.rate-table td {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 12px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.rate-table .service-summary-row td {
+  vertical-align: middle;
+}
+
+.rate-table .service-summary-row td:first-child,
+.rate-table .service-summary-row .action-cell,
+.rate-table .detail-expand-row td {
+  vertical-align: middle;
+}
+
+.rate-table thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--muted-light);
+}
+
+.light-table th,
+.light-table td,
+.light .rate-table th,
+.light .rate-table td {
+  border-top-color: rgba(0, 0, 0, 0.26);
+}
+
+.light .rate-table thead th {
+  color: var(--muted-dark);
+}
+
+.sub {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.78;
+}
+
+.note {
+  margin-top: 12px;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-light);
+}
+
+.light .note {
+  color: var(--muted-dark);
+}
+
+.two-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.compact td,
+.compact th {
+  padding: 10px 8px;
+}
+
+.bullet li + li {
+  margin-top: 10px;
+}
+
+.final {
+  align-items: start;
+}
+
+.contact-block {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 16px;
+}
+
+.contact-block p + p {
+  margin-top: 6px;
+}
+
+.small {
+  margin-top: 12px;
+  font-size: 0.84rem;
+  color: var(--muted-light);
+  overflow-wrap: anywhere;
+}
+
+.contact-block p {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 980px) {
+  .brochure {
+    width: 100%;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .sheet {
+    aspect-ratio: auto;
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .cover-grid,
+  .split,
+  .two-table {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .tab-list {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-btn {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .tab-btn:last-child {
+    border-bottom: none;
+  }
+
+  .tab-detail-table {
+    font-size: 0.82rem;
+  }
+
+  .feature-points {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .sheet-foot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .sheet {
+    padding: 16px;
+    border-width: 1px;
+  }
+
+  .sheet-meta {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+  }
+
+  .kicker {
+    margin-bottom: 8px;
+  }
+
+  .lead {
+    margin-top: 10px;
+    font-size: 0.93rem;
+    line-height: 1.5;
+  }
+
+  .tab-panels {
+    padding: 14px;
+  }
+
+  .tab-btn {
+    white-space: normal;
+  }
+
+  .tab-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+  }
+
+  .tab-note {
+    line-height: 1.45;
+  }
+
+  .sheet-no {
+    font-size: clamp(1.4rem, 10vw, 2.4rem);
+    right: 8px;
+    bottom: 8px;
+  }
+
+  .service-summary-row td {
+    display: block;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 0;
+  }
+
+  .service-summary-row td:first-child,
+  .service-summary-row td:last-child {
+    border-radius: 0;
+  }
+
+  .service-summary-row td:first-child br {
+    display: block;
+  }
+
+  .service-summary-row td:first-child .sub {
+    display: block;
+    margin-left: 0;
+    margin-top: 4px;
+  }
+
+  .action-cell {
+    width: auto;
+    text-align: left;
+    margin-top: 6px;
+  }
+
+  .detail-toggle-button {
+    width: 100%;
+    min-height: 36px;
+  }
+
+  .detail-expand-row td {
+    padding: 6px 0 12px;
+  }
+
+  .detail-lines p {
+    padding: 10px 12px 10px 30px;
+    line-height: 1.5;
+  }
+
+  .detail-lines p::before {
+    left: 12px;
+    top: 16px;
+    width: 7px;
+    height: 7px;
+  }
+
+  .detail-price {
+    padding: 11px 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    background:
+      radial-gradient(circle at 12% 8%, rgba(255, 255, 255, 0.16), transparent 40%),
+      radial-gradient(circle at 86% 88%, rgba(0, 0, 0, 0.15), transparent 36%),
+      #8a8a8a;
+  }
+
+  .brochure {
+    gap: 8px;
+  }
+
+  .sheet {
+    padding: 14px;
+    border-width: 1px;
+  }
+
+  .sheet-meta {
+    margin-bottom: 16px;
+    font-size: 0.64rem;
+    letter-spacing: 0.08em;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 11vw, 2.8rem);
+    line-height: 0.98;
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 8.5vw, 2rem);
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .lead {
+    margin-top: 12px;
+    font-size: 0.92rem;
+    line-height: 1.48;
+  }
+
+  .kicker {
+    margin-bottom: 8px;
+    font-size: 0.7rem;
+  }
+
+  .tab-panels {
+    padding: 12px;
+  }
+
+  .tab-btn {
+    font-size: 0.74rem;
+    line-height: 1.35;
+    padding: 12px 10px;
+  }
+
+  .tab-note,
+  .note {
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+  }
+
+  .sheet-no {
+    font-size: clamp(1.6rem, 12vw, 2.8rem);
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.15;
+  }
+
+  .rate-table,
+  .rate-table thead,
+  .rate-table tbody,
+  .rate-table tr,
+  .rate-table th,
+  .rate-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .rate-table thead {
+    display: none;
+  }
+
+  .rate-table tbody {
+    display: grid;
+    gap: 10px;
+  }
+
+  .rate-table tr {
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .light .rate-table tr {
+    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.42);
+  }
+
+  .rate-table td {
+    border: none !important;
+    padding: 4px 0;
+  }
+
+  .rate-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    opacity: 0.72;
+  }
+
+  .action-cell::before,
+  .detail-expand-cell::before {
+    content: none;
+    display: none;
+  }
+
+  .action-cell {
+    text-align: left;
+    margin-top: 4px;
+    width: auto;
+  }
+
+  .detail-toggle-button {
+    width: 100%;
+    min-height: 0;
+    text-align: center;
+    font-size: 0.68rem;
+    padding: 8px 10px;
+  }
+
+  .detail-expand-row {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .detail-expand-row td {
+    padding: 2px 0 0 !important;
+  }
+
+  .service-accordion-table tr {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .service-accordion-table .service-summary-row td {
+    background: rgba(8, 12, 23, 0.94);
+    padding: 12px 10px !important;
+  }
+
+  .service-accordion-table .detail-expand-row td {
+    padding: 6px 0 0 !important;
+    background: transparent;
+  }
+
+  .detail-lines p,
+  .detail-price {
+    padding: 11px 12px 11px 30px;
+    font-size: 0.86rem;
+  }
+
+  .detail-price {
+    padding: 11px 12px;
+  }
+
+  .sub {
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .detail-expand-row:not([hidden]) .detail-expand-panel {
+    animation: none;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .brochure {
+    width: 100%;
+    margin: 0;
+    gap: 0;
+  }
+
+  .sheet {
+    border: none;
+    page-break-after: always;
+  }
+}
+
+@keyframes sheet-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes detail-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  </style>
+</head>
+<body>
+  <main class="brochure">
+    <section class="sheet dark cover" id="cover">
+      <header class="sheet-meta">
+        <h3 class="brand-blue">Blue Moon Creatives</h3>
+        <p>Client Brochure 2026</p>
+      </header>
+      <div class="cover-grid">
+        <div>
+          <p class="kicker">Service Catalog + Cost Estimate</p>
+          <h1>Detailed Client Brochure</h1>
+          <p class="lead">
+            A structured presentation of our web, commerce, branding, marketplace, and social media services.
+            Built as a brochure document, not a typical website page. Pricing is shown as listed estimate or discussion-based where defined. Hosting, domain, premium tools, and custom system builds are clearly separated from base package lines.
+          </p>
+
+          <div class="tabs-shell cover-tabs" data-tabs>
+            <div class="tab-list" role="tablist" aria-label="Service category tabs">
+              <button
+                class="tab-btn is-active"
+                id="tab-web"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-web"
+                data-target="panel-web"
+              >
+                Website and Product Build Services
+              </button>
+              <button
+                class="tab-btn"
+                id="tab-marketplace"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-marketplace"
+                data-target="panel-marketplace"
+              >
+                Amazon, Flipkart, and Inventory Services
+              </button>
+              <button
+                class="tab-btn"
+                id="tab-creative"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-creative"
+                data-target="panel-creative"
+              >
+                Creative, Branding, and Social Media Services
+              </button>
+            </div>
+
+            <div class="tab-panels">
+              <article class="tab-panel is-active" id="panel-web" role="tabpanel" aria-labelledby="tab-web">
+                <p class="tab-label">Website and Product Build Services</p>
+                <table class="rate-table tab-detail-table">
+                  <thead>
+                    <tr>
+                      <th>Service</th>
+                      <th>Details</th>
+                      <th>Estimate Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Website (5 Pages)<br><span class="sub">Basic Design + Development</span></td>
+                      <td>
+                        <div class="detail-lines">
+                          <p>Fully custom, template-free layout crafted with a modern, clean, and brand-focused visual direction, supported by mobile-first responsive behavior across mobile, tablet, and desktop with refined typography and color palette selection.</p>
+                          <p>End-to-end implementation includes frontend development with smooth animations, interactive sections, basic SEO readiness, cross-browser compatibility, and basic backend integration for contact form setup, form validation, and clean code structure.</p>
+                          <p class="not-included">Not Included - Hosting and domain purchase, advanced backend systems (login panels, dashboards), e-commerce functionality, third-party premium plugins/tools, ongoing maintenance (separate plan required).</p>
+                        </div>
+                      </td>
+                      <td>INR 16,000/-</td>
+                    </tr>
+                    <tr>
+                      <td>Website (10+ Pages)<br><span class="sub">Design + Development</span></td>
+                      <td>
+                        <div class="detail-lines">
+                          <p>Fully custom 10+ page layout planning (no pre-made templates), modern and brand-aligned visual system.</p>
+                          <p>Mobile-first responsive design (Mobile, Tablet, Desktop), advanced typography hierarchy and color palette consistency.</p>
+                          <p>Frontend Development with smooth animations, interactive sections, hero banners/sliders/testimonials/CTA blocks, basic SEO structure, cross-browser compatibility.</p>
+                          <p>Backend setup with basic admin panel, CRUD flow, form handling with validation, and basic database integration.</p>
+                          <p class="not-included">Not Included - Hosting and domain purchase, advanced CRM/ERP/dashboard systems, payment gateway architecture, third-party premium plugins/tools, ongoing maintenance (separate plan required).</p>
+                        </div>
+                      </td>
+                      <td>INR 26,000/-</td>
+                    </tr>
+                    <tr>
+                      <td>Portfolio Website (2-3 Pages)<br><span class="sub">Design + Dev + Logo + Brand Identity</span></td>
+                      <td>
+                        <div class="detail-lines">
+                          <p>Custom portfolio layout (No templates), modern, minimal, and personal brand-focused design direction.</p>
+                          <p>Mobile-first responsive design (Mobile, Tablet, Desktop), typography and color style aligned to personal identity.</p>
+                          <p>Frontend Development with smooth animations, interactive presentation sections, and clean performance-focused structure.</p>
+                          <p>Basic Backend Integration for contact/enquiry form setup, form validation, and clean code organization.</p>
+                          <p class="not-included">Not Included - Hosting and domain purchase, advanced backend systems, e-commerce/payment flows, third-party premium plugins/tools, ongoing maintenance (separate plan required).</p>
+                        </div>
+                      </td>
+                      <td>INR 11,500/-</td>
+                    </tr>
+                    <tr>
+                      <td>Ecommerce Website<br><span class="sub">Design + Development</span></td>
+                      <td>
+                        <div class="detail-lines">
+                          <p>Full custom ecommerce layout planning (No templates), premium and conversion-focused UI/UX system.</p>
+                          <p>Mobile-first responsive design (Mobile, Tablet, Desktop), category/product-oriented hierarchy, typography and color design strategy.</p>
+                          <p>Premium Frontend Development with interactive sections, smooth UI transitions, and scalable storefront presentation.</p>
+                          <p>Controlled backend setup with admin panel and basic database structure for operational content/product handling.</p>
+                          <p class="not-included">Not Included - Hosting and domain purchase, custom database scaling/infrastructure, third-party premium tools/licenses, ongoing maintenance and operational support (separate plan required).</p>
+                        </div>
+                      </td>
+                      <td>INR 40,000/-</td>
+                    </tr>
+                    <tr>
+                      <td>Product Building<br><span class="sub">Custom Plan</span></td>
+                      <td>
+                        <div class="detail-lines">
+                          <p>Custom product/system planning based on business workflows, technical requirements, and scale expectations.</p>
+                          <p>Architecture scope, feature mapping, interface direction, and implementation model are defined case-by-case.</p>
+                          <p>Development coverage can include frontend, backend, admin workflows, integration planning, and deployment strategy.</p>
+                          <p>Final commercial proposal is prepared after requirement discovery and technical feasibility alignment.</p>
+                          <p class="not-included">Not Included - Fixed one-size pricing, undefined scope delivery, third-party premium tools/licenses, long-term maintenance and support (separate plan required).</p>
+                        </div>
+                      </td>
+                      <td>Custom</td>
+                    </tr>
+                    <tr>
+                      <td>Website Maintenance</td>
+                      <td>
+                        <div class="detail-lines">
+                          <p>Database and website maintenance support with ongoing health checks and operational upkeep.</p>
+                          <p>Minor content/design/code updates based on monthly support scope and approved change requests.</p>
+                          <p>Form-level fixes, small bug corrections, and routine site continuity support for existing systems.</p>
+                          <p>Support structure is tailored by workload, frequency, and response expectations.</p>
+                          <p class="not-included">Not Included - Major feature development, complete redesign/rebuild, advanced module creation, and large-scale system expansion (separate plan required).</p>
+                        </div>
+                      </td>
+                      <td>Discussion-Based</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="tab-note">Note: Hosting, domain, and custom database costs are billed separately when required.</p>
+              </article>
+
+              <article class="tab-panel" id="panel-marketplace" role="tabpanel" aria-labelledby="tab-marketplace" hidden>
+                <p class="tab-label">Amazon, Flipkart, and Inventory Services</p>
+                <table class="rate-table tab-detail-table">
+                  <thead>
+                    <tr>
+                      <th>Service</th>
+                      <th>Details</th>
+                      <th>Estimate Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Amazon / Flipkart Listing</td>
+                      <td>
+                        <div class="detail-lines">
+                          <p>Initial listing setup includes product title, description, key details, SKU sheet preparation, category/attribute mapping, and product final image fixes for marketplace-ready publishing.</p>
+                          <p>Execution covers FBA/FBM alignment, inventory and fulfillment configuration, and keyword-oriented listing optimization within the approved SKU scope.</p>
+                          <p>Client must provide GTIN, product specifications, and brand assets. Paid ads/PPC, A+ content, and account recovery services are excluded from this package.</p>
+                        </div>
+                      </td>
+                      <td>INR 10,500/-</td>
+                    </tr>
+                    <tr>
+                      <td>Amazon + Flipkart Listing</td>
+                      <td>
+                        <div class="detail-lines">
+                          <p>Initial listing setup is executed for both Amazon and Flipkart, including product title/content structuring, description and key detail generation, SKU sheet preparation, and product final image fixes.</p>
+                          <p>Operational setup includes FBA/FBM alignment, inventory and fulfillment configuration, platform-wise attribute mapping, and listing optimization for better category relevance and discoverability.</p>
+                          <p>Client must provide GTIN, product specifications, and brand assets for both platforms. Paid ads/PPC, A+ content, account recovery, and advanced catalog troubleshooting are excluded from this package.</p>
+                        </div>
+                      </td>
+                      <td>INR 18,000/-</td>
+                    </tr>
+                    <tr>
+                      <td>Custom Listing<br><span class="sub">Amazon / Flipkart / Blinkit</span></td>
+                      <td>
+                        <div class="detail-lines">
+                          <p>End-to-end custom listing setup is planned across Amazon, Flipkart, and Blinkit based on product category, platform scope, catalog complexity, and total SKU volume.</p>
+                          <p>Feature coverage includes listing architecture, title and content structuring, product description and key detail generation, backend attribute mapping, SKU alignment, and platform-specific publishing workflows.</p>
+                          <p>Operational setup can include FBA/FBM configuration, inventory readiness, fulfillment mapping, variation handling, and listing quality checks for scalable catalog execution.</p>
+                          <p>Creative coverage includes storefront design, refined photoshoot images (post processing), and product detail images to improve visual quality, trust, and conversion readiness.</p>
+                          <p>This is a custom-scope package, so final price is aligned to platform count, catalog size, content depth, and required visual-production effort.</p>
+                        </div>
+                      </td>
+                      <td>Custom</td>
+                    </tr>
+                    <tr>
+                      <td>Listing and Inventory Maintenance</td>
+                      <td>Ongoing listing and inventory maintenance support for active marketplace operations and continuity updates.</td>
+                      <td>INR 6,000/- approx. monthly</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="tab-note">Note: GTIN is to be provided by customer for listing services.</p>
+              </article>
+
+              <article class="tab-panel" id="panel-creative" role="tabpanel" aria-labelledby="tab-creative" hidden>
+                <p class="tab-label">Creative, Branding, and Social Media Services</p>
+                <div class="two-table">
+                  <table class="rate-table tab-detail-table compact">
+                    <thead>
+                      <tr>
+                        <th>Creative Service</th>
+                        <th>Details</th>
+                        <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Reel Edit</td>
+                        <td>Professional reel editing per video.</td>
+                        <td>INR 1,200/-</td>
+                      </tr>
+                      <tr>
+                        <td>Graphical Posters</td>
+                        <td>Design support per poster.</td>
+                        <td>INR 800/-</td>
+                      </tr>
+                      <tr>
+                        <td>Branding + Identity + Logo + Frontend</td>
+                        <td>Basic package up to 6 pages, final scope by discussion.</td>
+                        <td>INR 8,500/-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <table class="rate-table tab-detail-table compact">
+                    <thead>
+                      <tr>
+                        <th>Social Service</th>
+                        <th>Details</th>
+                        <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Social Media Handling</td>
+                        <td>Basic handling, stories generation, posts, and analytics.</td>
+                        <td>INR 5,500/-</td>
+                      </tr>
+                      <tr>
+                        <td>Social Media Package</td>
+                        <td>10 posts, 18 stories, 6 reels, scripts, research, targeted ads, and marketing.</td>
+                        <td>INR 22,000/- per month</td>
+                      </tr>
+                      <tr>
+                        <td>Custom Packages</td>
+                        <td>Mixed service bundles for brand-specific needs.</td>
+                        <td>Custom</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="tab-note">Note: Custom packages are available across creative, branding, and social service mixes.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sheet light" id="contents">
+      <header class="sheet-meta">
+        <p>Contents</p>
+        <p>Part A</p>
+      </header>
+      <div class="split">
+        <article>
+          <h2>Document Contents</h2>
+          <ol class="toc-list">
+            <li>Interactive Service Tabs (Website, Marketplace, Creative)</li>
+            <li>Commercial Notes and Exclusions</li>
+            <li>Contact and Custom Package Details</li>
+          </ol>
+        </article>
+        <article>
+          <h3>Purpose</h3>
+          <p>
+            This brochure converts your estimate into an executive, client-facing format. It preserves all service data
+            while improving readability, confidence, and professional presentation during approvals.
+          </p>
+          <h3>Scope Style</h3>
+          <p>
+            Pricing is shown as listed estimate or discussion-based where defined. Hosting, domain, premium tools, and
+            custom system builds are clearly separated from base package lines.
+          </p>
+        </article>
+      </div>
+      <span class="sheet-no">02</span>
+    </section>
+
+    <section class="sheet light" id="commercial">
+      <header class="sheet-meta">
+        <p>Part B</p>
+        <p>Commercial Notes</p>
+      </header>
+      <h2 class="sheet-title">Commercial Conditions and Exclusions</h2>
+      <div class="split">
+        <article>
+          <h3>Exclusions</h3>
+          <ul class="bullet">
+            <li>Hosting and domain are excluded from website package pricing.</li>
+            <li>Custom database and advanced backend systems are charged separately.</li>
+            <li>GTIN is mandatory from customer side for listing services.</li>
+            <li>Premium plugin subscriptions are outside base estimates.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Pricing Structure</h3>
+          <ul class="bullet">
+            <li>Listed prices are estimate-based or starting values.</li>
+            <li>Discussion-based services are quoted after requirement study.</li>
+            <li>Monthly packages can vary by scale and operating load.</li>
+            <li>Custom packages are available for hybrid requirements.</li>
+          </ul>
+        </article>
+      </div>
+      <span class="sheet-no">03</span>
+    </section>
+
+    <section class="sheet dark" id="contact-details">
+      <header class="sheet-meta">
+        <p>Part C</p>
+        <p>Contact and Next Step</p>
+      </header>
+      <div class="split final">
+        <article>
+          <h2 class="sheet-title">Need a custom quote?</h2>
+          <p class="lead">
+            Share your required services, expected timeline, and platform scope. We will structure the final commercial
+            proposal around your exact business goals.
+          </p>
+        </article>
+        <article class="contact-block">
+          <h3>Contact</h3>
+          <p>9830294997</p>
+          <p>9073405124</p>
+          <p>9073168013</p>
+          <p>contact.bluemooncreatives@gmail.com</p>
+          <p class="small">Custom packages are also available.</p>
+        </article>
+      </div>
+      <footer class="sheet-foot">
+        <span class="brand-blue">Blue Moon Creatives</span>
+        <span>End of Brochure</span>
+      </footer>
+      <span class="sheet-no">04</span>
+    </section>
+  </main>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Blue Moon Creatives",
+      "email": "contact.bluemooncreatives@gmail.com",
+      "telephone": "+91-9830294997",
+      "serviceType": [
+        "Website Design and Development",
+        "Ecommerce Website Development",
+        "Marketplace Listing Services",
+        "Branding and Logo Design",
+        "Social Media Services"
+      ]
+    }
+  </script>
+
+  <script>
+    const tables = document.querySelectorAll(".rate-table");
+
+    tables.forEach((table) => {
+      const headers = Array.from(table.querySelectorAll("thead th")).map((th) =>
+        th.textContent.trim()
+      );
+      if (!headers.length) return;
+
+      table.querySelectorAll("tbody tr").forEach((row) => {
+        Array.from(row.children).forEach((cell, index) => {
+          if (cell.tagName !== "TD") return;
+          cell.setAttribute("data-label", headers[index] || "");
+        });
+      });
+    });
+
+    const serviceRows = document.querySelectorAll(".tab-detail-table tbody tr");
+
+    serviceRows.forEach((row, index) => {
+      const serviceCell = row.querySelector("td:nth-child(1)");
+      const detailsCell = row.querySelector("td:nth-child(2)");
+      const priceCell = row.querySelector("td:nth-child(3)");
+      if (!serviceCell || !detailsCell || row.classList.contains("service-summary-row")) return;
+
+      const panelId = `service-panel-${index + 1}`;
+      const tbody = row.parentElement;
+      const actionCell = document.createElement("td");
+      actionCell.className = "action-cell";
+      actionCell.setAttribute("data-label", "Details");
+
+      const toggleButton = document.createElement("button");
+      toggleButton.type = "button";
+      toggleButton.className = "detail-toggle-button";
+      toggleButton.setAttribute("aria-expanded", "false");
+      toggleButton.setAttribute("aria-controls", panelId);
+      toggleButton.textContent = "View Details";
+
+      actionCell.appendChild(toggleButton);
+      detailsCell.replaceWith(actionCell);
+      if (priceCell) priceCell.remove();
+
+      const detailRow = document.createElement("tr");
+      detailRow.className = "detail-expand-row";
+      detailRow.hidden = true;
+
+      const detailCell = document.createElement("td");
+      detailCell.className = "detail-expand-cell";
+      detailCell.colSpan = 3;
+
+      const panel = document.createElement("div");
+      panel.className = "detail-expand-panel";
+      panel.id = panelId;
+      panel.setAttribute("role", "region");
+      panel.setAttribute("aria-label", `${serviceCell.textContent.trim()} details`);
+
+      const detailsContent = document.createElement("div");
+      detailsContent.className = "detail-lines";
+      while (detailsCell.firstChild) {
+        detailsContent.appendChild(detailsCell.firstChild);
+      }
+
+      Array.from(detailsContent.childNodes).forEach((node) => {
+        if (node.nodeType !== Node.TEXT_NODE) return;
+        const text = node.textContent.trim();
+        if (!text) {
+          node.remove();
+          return;
+        }
+        const p = document.createElement("p");
+        p.textContent = text;
+        node.replaceWith(p);
+      });
+
+      if (detailsContent.children.length === 0 && detailsContent.textContent.trim()) {
+        const p = document.createElement("p");
+        p.textContent = detailsContent.textContent.trim();
+        detailsContent.textContent = "";
+        detailsContent.appendChild(p);
+      }
+
+      panel.appendChild(detailsContent);
+
+      const priceText = priceCell ? priceCell.textContent.trim() : "";
+      if (priceText) {
+        const priceLine = document.createElement("p");
+        priceLine.className = "detail-price";
+        priceLine.textContent = `Estimate Price: ${priceText}`;
+        panel.appendChild(priceLine);
+      }
+
+      detailCell.appendChild(panel);
+      detailRow.appendChild(detailCell);
+      row.classList.add("service-summary-row");
+      row.insertAdjacentElement("afterend", detailRow);
+
+      toggleButton.addEventListener("click", () => {
+        const shouldOpen = detailRow.hidden;
+
+        tbody.querySelectorAll(".detail-expand-row:not([hidden])").forEach((openRow) => {
+          if (openRow === detailRow) return;
+          openRow.hidden = true;
+          const openSummaryRow = openRow.previousElementSibling;
+          openSummaryRow?.classList.remove("is-active");
+          const openBtn = openSummaryRow?.querySelector(".detail-toggle-button");
+          if (!openBtn) return;
+          openBtn.classList.remove("is-open");
+          openBtn.setAttribute("aria-expanded", "false");
+          openBtn.textContent = "View Details";
+        });
+
+        detailRow.hidden = !shouldOpen;
+        row.classList.toggle("is-active", shouldOpen);
+        toggleButton.classList.toggle("is-open", shouldOpen);
+        toggleButton.setAttribute("aria-expanded", String(shouldOpen));
+        toggleButton.textContent = shouldOpen ? "Hide Details" : "View Details";
+      });
+    });
+
+    const tabRoots = document.querySelectorAll("[data-tabs]");
+
+    tabRoots.forEach((root) => {
+      const buttons = Array.from(root.querySelectorAll(".tab-btn"));
+      const panels = Array.from(root.querySelectorAll(".tab-panel"));
+
+      function activateTab(targetId) {
+        buttons.forEach((btn) => {
+          const isActive = btn.dataset.target === targetId;
+          btn.classList.toggle("is-active", isActive);
+          btn.setAttribute("aria-selected", String(isActive));
+        });
+
+        panels.forEach((panel) => {
+          const isActive = panel.id === targetId;
+          panel.classList.toggle("is-active", isActive);
+          panel.hidden = !isActive;
+        });
+      }
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => activateTab(btn.dataset.target));
+      });
+    });
+  </script>
+</body>
+</html>
